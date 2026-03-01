@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoリスト（完全保存版）</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>ToDo List</h2>
+    
+    <div class="input-group">
+        <div class="input-row">
+            <div class="field field-priority">
+                <label>優先度</label>
+                <select id="todo-priority">
+                    <option value="" selected>選択してください</option>
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                </select>
+            </div>
+            <div class="field field-task">
+                <label>やること</label>
+                <input type="text" id="todo-input" placeholder="タスクを入力">
+            </div>
+            <div class="field field-date">
+                <label>期限 (任意)</label>
+                <input type="date" id="todo-date">
+            </div>
+        </div>
+        <div class="button-row">
+            <button id="add-btn" class="main-btn">タスクを追加</button>
+            <button id="clear-btn" class="main-btn">一括削除</button>
+        </div>
+    </div>
+
+    <ul id="todo-list"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
